@@ -460,10 +460,10 @@ Este proyecto está bajo la Licencia MIT. Ver archivo `LICENSE` para más detall
 
 ## 👤 Autor
 
-**Tu Nombre**
-- Portfolio: [tu-portfolio.com]
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Nombre](https://linkedin.com/in/tu-perfil)
+**David Sánchez Román**
+- Portfolio: [portafoliodevastro.netlify.app](https://portafoliodevastro.netlify.app/)
+- GitHub: [@davidsanchezroman](https://github.com/davidsanchezroman)
+- LinkedIn: [David Sánchez Román](https://www.linkedin.com/in/david-sanchez-roman-817022320/)
 
 ---
 
