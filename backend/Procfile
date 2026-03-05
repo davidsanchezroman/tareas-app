@@ -1,0 +1,8 @@
+# Script de inicio para Render.com
+# Render ejecutará este script automáticamente
+
+# Opción 1: Usar Gunicorn (recomendado para producción)
+web: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+
+# Opción 2: Usar Flask directamente (solo para testing)
+# web: python app.py

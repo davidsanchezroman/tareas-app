@@ -1,0 +1,4 @@
+# Archivo _redirects para Netlify
+# Asegura que todas las rutas de SPA funcionen correctamente
+
+/*    /index.html   200

@@ -1,0 +1,44 @@
+# Docker Compose para desarrollo local
+# No necesita "version" en versiones modernas de Docker Compose
+
+services:
+  db:
+    image: postgres:15
+    container_name: tareas_db
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: tareas
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./backend
+    container_name: tareas_backend
+    restart: always
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://admin:admin123@db:5432/tareas
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    build: ./frontend
+    container_name: tareas_frontend
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+volumes:
+  db_data:

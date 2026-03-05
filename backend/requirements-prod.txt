@@ -1,0 +1,3 @@
+# Gunicorn es un servidor WSGI de producción para Python
+# Lo necesitamos para deploy en Render (no usar Flask dev server en prod)
+gunicorn==21.2.0

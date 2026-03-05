@@ -1,0 +1,33 @@
+# Configuración de Netlify para el frontend
+# Documentación: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # Directorio base del frontend
+  base = "frontend/"
+  
+  # Comando para construir la aplicación
+  command = "npm run build"
+  
+  # Directorio con los archivos estáticos generados
+  publish = "build/"
+
+# Configuración para Single Page Application (SPA)
+# Redirige todas las rutas al index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Variables de entorno (también se pueden configurar en el dashboard)
+# REACT_APP_API_URL se debe configurar manualmente en Netlify para seguridad
+[build.environment]
+  # NODE_VERSION = "18"
+  # Agregar REACT_APP_API_URL en el dashboard de Netlify
+
+# Deploy preview (opcional)
+[context.deploy-preview]
+  command = "npm run build"
+
+# Branch deploy (opcional)
+[context.branch-deploy]
+  command = "npm run build"
