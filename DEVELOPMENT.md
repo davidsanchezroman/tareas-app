@@ -213,9 +213,9 @@ GET    /health              → Healthcheck (pendiente)
   - Password: admin123
   - Database: tareas
 
-### URLs de Producción (pendiente):
-- Frontend: https://[tu-app].netlify.app
-- Backend: https://[tu-app].onrender.com
+### URLs de Producción:
+- Frontend: https://apptareas-app.netlify.app/
+- Backend: https://tareas-app-backend-828m.onrender.com
 - Database: PostgreSQL en Render (interno)
 
 ---
@@ -275,10 +275,10 @@ GET    /health              → Healthcheck (pendiente)
 
 ## 🚦 Estado del Proyecto
 
-**Checkpoint Actual:** FASE 3 - Listo para Deploy
+**Checkpoint Actual:** ✅ FASE 3 COMPLETADA - Aplicación en Producción
 
-**Última actualización:** 5 de Marzo, 2026  
-**Próximo paso:** Deploy en Render.com y Netlify
+**Última actualización:** 6 de Marzo, 2026  
+**Estado:** 🎉 Desplegado y funcionando en producción
 
 **Fase 1 completada:**
 - ✅ Toggle de completadas funcional
@@ -300,6 +300,14 @@ GET    /health              → Healthcheck (pendiente)
 - ✅ DEPLOY.md con guía rápida
 - ✅ Gunicorn agregado para producción
 
+**Fase 3 completada:**
+- ✅ Backend desplegado en Render.com
+- ✅ Base de datos PostgreSQL en Render
+- ✅ Frontend desplegado en Netlify
+- ✅ CORS configurado entre frontend y backend
+- ✅ Aplicación funcionando en producción
+- ✅ URLs de producción actualizadas en documentación
+
 ---
 
 ## 📞 Links Útiles
@@ -312,7 +320,7 @@ GET    /health              → Healthcheck (pendiente)
 - [React Docs](https://react.dev/)
 
 ### Herramientas:
-- [GitHub Repo](pendiente)
+- [GitHub Repo](https://github.com/davidsanchezroman/tareas-app)
 - [Render Dashboard](https://dashboard.render.com/)
 - [Netlify Dashboard](https://app.netlify.com/)
 

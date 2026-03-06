@@ -10,8 +10,8 @@ Aplicación web full-stack para gestión de tareas con React, Flask y PostgreSQL
 
 ## 🚀 Demo
 
-- **Frontend (Netlify)**: [Próximamente - Configurar tras deploy]
-- **Backend (Render)**: [Próximamente - Configurar tras deploy]
+- **Frontend (Netlify)**: [https://apptareas-app.netlify.app/](https://apptareas-app.netlify.app/)
+- **Backend (Render)**: [https://tareas-app-backend-828m.onrender.com](https://tareas-app-backend-828m.onrender.com)
 
 ---
 
