@@ -12,6 +12,7 @@ function App() {
   const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
   const API_ENDPOINT = `${API_URL}/api/tareas`;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     cargarTareas();
   }, []);
