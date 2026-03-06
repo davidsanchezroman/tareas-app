@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
 
 function App() {
@@ -12,12 +12,7 @@ function App() {
   const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
   const API_ENDPOINT = `${API_URL}/api/tareas`;
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => {
-    cargarTareas();
-  }, []);
-
-  const cargarTareas = async () => {
+  const cargarTareas = useCallback(async () => {
     try {
       setLoading(true);
       const response = await fetch(API_ENDPOINT);
@@ -29,7 +24,11 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [API_ENDPOINT]);
+
+  useEffect(() => {
+    cargarTareas();
+  }, [cargarTareas]);
 
   const agregarTarea = async (e) => {
     e.preventDefault();
